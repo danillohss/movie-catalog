@@ -48,14 +48,12 @@ export default {
       movies.push(this.movie);
       localStorage.setItem("myMovie", JSON.stringify(movies));
       alert('Filme adicionado aos favoritos!')
-      console.log(movies);
     },
   },
   async created() {
     const response = await api.get(`?api=filmes/${this.id}`);
     this.movie = response.data;
     this.loading = false;
-    console.log(response.data);
   },
 };
 </script>

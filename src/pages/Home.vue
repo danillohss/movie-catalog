@@ -28,7 +28,6 @@ export default {
     const response = await api.get("?api=filmes");
     this.movies = response.data;
     this.loading = false;
-    console.log(response.data);
   },
 };
 </script>
