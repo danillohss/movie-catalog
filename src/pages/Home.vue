@@ -19,7 +19,7 @@ export default {
     };
   },
   async created() {
-    const response = await api.get("?api=filmes");
+    const response = await api.get("r-api/?api=filmes");
     this.movies = response.data;
     console.log(response.data);
   },
