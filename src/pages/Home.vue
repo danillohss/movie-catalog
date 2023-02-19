@@ -10,6 +10,10 @@
         <router-link :to="`/filme/${movie.id}`">Acessar</router-link>
       </article>
     </div>
+    <footer style="color: red">
+      Criado por ➡️
+      <a href="https://github.com/danillohss" target="_blank">Danillohss</a>
+    </footer>
   </div>
 </template>
 
