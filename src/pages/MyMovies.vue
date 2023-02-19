@@ -1,15 +1,23 @@
 <template>
   <div id="my-movies">
-    <h1>Filmes favoritados</h1>
+    <div v-if="loading" class="loading">
+      <Loading />
+    </div>
+    <div v-else class="container"></div>
   </div>
 </template>
 
 <script>
+import Loading from "../components/Loading";
 export default {
-
-}
+  components: { Loading },
+  data() {
+    return {
+      loading: true,
+    };
+  },
+};
 </script>
 
 <style>
-
 </style>

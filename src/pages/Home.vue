@@ -25,7 +25,7 @@ export default {
     };
   },
   async created() {
-    const response = await api.get("r-api/?api=filmes");
+    const response = await api.get("?api=filmes");
     this.movies = response.data;
     this.loading = false;
     console.log(response.data);
