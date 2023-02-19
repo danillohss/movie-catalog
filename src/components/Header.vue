@@ -1,7 +1,8 @@
 <template>
   <header id="header">
     <router-link to="/" class="catalogo">Catálogo de Filmes</router-link>
-    <router-link to="/favoritos" class="meus-favoritos">Favoritos</router-link>
+    <router-link to="/favoritos" class="my-favorites">Favoritos</router-link>
+    <router-link to="/contato" class="contact">Contato</router-link>
   </header>
 </template>
 
@@ -27,9 +28,21 @@ export default {};
   padding: 5px 15px;
   outline: none;
   border-radius: 5px;
+  color: black;
 }
 
-.meus-favoritos {
+.my-favorites {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  background: #fff;
+  padding: 5px 15px;
+  outline: none;
+  color: black;
+  border-radius: 5px;
+}
+.contact {
+  color: black;
   text-decoration: none;
   cursor: pointer;
   border: 0;

@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Movie from './pages/Movie';
 import Error from './pages/Error';
 import MyMovies from './pages/MyMovies';
+import Contact from './pages/Contact';
 
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
         path: '/favoritos',
         component: MyMovies,
         name: 'MyMovies',
+    },
+    {
+        path: '/contato',
+        component: Contact,
+        name: 'Contact',
     },
     {
         path: '/*/*',

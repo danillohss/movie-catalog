@@ -22,13 +22,15 @@
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script>
 import api from "../service/api";
 import Loading from "../components/Loading.vue";
+import Footer from "../components/Footer.vue";
 export default {
-  components: { Loading },
+  components: { Loading, Footer },
   props: ["id"],
   data() {
     return {
@@ -42,12 +44,12 @@ export default {
       let movies = JSON.parse(myList) || [];
       const hasMovie = movies.some((movie) => movie.id === this.movie.id);
       if (hasMovie) {
-        alert('O Filme já está em sua lista!')
+        alert("O Filme já está em sua lista!");
         return;
       }
       movies.push(this.movie);
       localStorage.setItem("myMovie", JSON.stringify(movies));
-      alert('Filme adicionado aos favoritos!')
+      alert("Filme adicionado aos favoritos!");
     },
   },
   async created() {

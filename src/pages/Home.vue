@@ -10,18 +10,16 @@
         <router-link :to="`/filme/${movie.id}`">Acessar</router-link>
       </article>
     </div>
-    <footer style="color: red">
-      Criado por ➡️
-      <a href="https://github.com/danillohss" target="_blank">Danillohss</a>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
 import api from "../service/api.js";
 import Loading from "../components/Loading.vue";
+import Footer from "../components/Footer.vue";
 export default {
-  components: { Loading },
+  components: { Loading, Footer },
   data() {
     return {
       movies: [],

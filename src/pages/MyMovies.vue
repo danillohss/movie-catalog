@@ -18,13 +18,15 @@
         </li>
       </ul>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Loading from "../components/Loading";
+import Footer from "../components/Footer";
 export default {
-  components: { Loading },
+  components: { Loading, Footer },
   data() {
     return {
       loading: true,
@@ -103,11 +105,19 @@ button {
   transition: all 0.5s;
   background: #fff;
 }
+
 button:hover {
   background: brown;
   color: #fff;
 }
+
 span {
   font-size: 25px;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 </style>
